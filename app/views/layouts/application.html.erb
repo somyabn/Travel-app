@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Displaying text directions with <code>setPanel()</code></title>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-trubolinks-track' => true %>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script> 
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  </head>
+  
+  <body>
+    
+   		<%=yield%>
+
+	    <div id="control"></div>
+	    <div id="directions-panel"></div>
+	    <div id="map-canvas"></div>
+  </body>
+</html>

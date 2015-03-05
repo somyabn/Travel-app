@@ -1,0 +1,12 @@
+<h1>New Trip</h1>
+ 	<%= form_tag(trips_show_path, method: :get) do %>
+
+		<p><%= text_field_tag :name, nil, placeholder: "name" %></p>
+	
+		<p><%= text_field_tag :start_address, nil, placeholder: "start", id: "start" %></p>
+		<p><%= text_field_tag :end_address, nil, placeholder: "end", id: "end"  %></p>
+		
+		<p><%= text_field_tag :mpg, nil, placeholder: "Miles Per Gallon" %></p>
+	
+		<p><%= submit_tag "Trip it!" %></p>
+	<%end%>

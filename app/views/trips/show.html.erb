@@ -1,0 +1,36 @@
+<p>weldome</p>
+
+
+
+
+
+<p><%= @trip.name%><p>
+<%= @trip.start.latitude%>
+<%= @trip.start.longitude %>
+<%= @trip.finish.latitude %>
+<%= @trip.finish.longitude %>
+<%= @trip.distance%>
+<%= @trip.duration %>
+
+<h3>Cheapest Stations</h3>
+<ol>
+<% @trip.return_cheapest_or_closest_gas_stations.each do |station| %>
+	<li><%= station.name %> | <%= station.price %> | <%= station.distance %></li>
+<% end %>
+</ol>
+<h3>All Stations</h3>
+<ol>
+<% @trip.gas_stations.each do |station| %>
+	<li><%= station.name %> | <%= station.price %> | <%= station.distance %></li>
+<% end %>
+</ol>
+
+<!-- <div id='control'>
+<div id="directions-panel"></div>
+<div id="map-canvas"></div> -->
+<!-- /div> -->
+
+<script type="text/javascript">
+	var tripDetails = {start_lat: <%= @trip.start.latitude %>, start_lon: <%= @trip.start.longitude %>, start_address: '<%= @trip.start.address %>', finish_address: '<%= @trip.finish.address %>' };
+</script>
+	
