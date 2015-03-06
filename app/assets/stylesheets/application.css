@@ -15,7 +15,7 @@
  */
 
 input {
-	
+	padding: .75em;
 	font-family: 32px;
 	width: 200px;
 }
@@ -25,38 +25,33 @@ html, body, #map-canvas {
     margin: 0px;
     padding: 0px;
     font-family: Arial;
-
   }
 
   #panel {
+    position: absolute;
     top: 5px;
     left: 50%;
     margin-left: -180px;
     z-index: 5;
-   /* background-color: #fff;*/
+    background-color: #fff;
     padding: 5px;
+    border: 1px solid #999;
   }
 
   #directions-panel {
-    height: 130%;
+    height: 100%;
     float: right;
-    width: 420px;
+    width: 390px;
     overflow: auto;
-    border-left: solid black 2px;
-    margin-top:0px;
   }
 
   #map-canvas {
+    margin-right: 400px;
    
-    width:725px;
-    float:left;
-    height:550px;
-    border-right: 5px solid #73AF90;
-    border-bottom: 5px solid #73AF90;
   }
 
   #control {
-  
+    background: #fff;
     padding: 5px;
     font-size: 14px;
     font-family: Arial;
@@ -68,7 +63,7 @@ html, body, #map-canvas {
   @media print {
     #map-canvas {
       height: 500px;
-
+      margin: 0;
     }
 
     #directions-panel {
@@ -77,12 +72,7 @@ html, body, #map-canvas {
     }
   }
 
-
-***********************************************
-
-
-
-#new-trip-form{
+#new-trip-form {
   border:3px solid red;
   width:400px;
   height:400px;
@@ -97,21 +87,17 @@ header{
  width:98%;
 }
 
-}
-
 
 #cheapest-station{
   width:500px;
   float:left;
 
 }
+
 #cheapest-stations{
   width:300px;
   float:left;
-
-  
 }
-
 
 
 #cheapest-station-list{
@@ -119,6 +105,3 @@ header{
   padding:0;*/
 
 }
-
-
-

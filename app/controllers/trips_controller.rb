@@ -14,7 +14,6 @@ class TripsController < ApplicationController
     @trip = Trip.new(params[:name], start_place, end_place, params[:mpg])
     
     #call Trip methods
-       
     # @trips=[]
 
     # @trips<<@trip
@@ -25,10 +24,9 @@ class TripsController < ApplicationController
 
     #   marker.lat trip.finish.latitude
     #   marker.lng trip.finish.longitude
-
-
     # end
     end 
+
 
 
 end

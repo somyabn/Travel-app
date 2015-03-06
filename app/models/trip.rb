@@ -64,7 +64,6 @@ class Trip
 		url = "http://api.mygasfeed.com/stations/radius/#{start_lat}/#{start_lon}/5/reg/price/#{gas_key}.json"
 
 	 	response = JSON.load(RestClient.get(url))
-	 	
 		response["stations"].each do |f|
 			price = f["reg_price"]
 			name = f["station"]
