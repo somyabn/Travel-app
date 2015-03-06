@@ -36,13 +36,6 @@ class Trip
 	end
 
 
-
-
-
-
-
-
-
 	def get_distance_duration
 		google_key = ENV['GOOGLE_DIRECTION_MATRIX_APIKEY']
 		
@@ -53,11 +46,15 @@ class Trip
 		url ="https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{origin}&destinations=#{dest}&units=imperial&language=en-EN&key=#{google_key}"
 
 	 	response = JSON.load(RestClient.get(url))
-	 	
-		response["rows"][0]["elements"].map do |f|
+	 	# p "this is the response "
+	 	# p  response
+	 	# p "END"
+	 	#  #p["rows"][0]["elements"][0]["status"]
+					
+		response["rows"][0]["elements"].map do |f|	
 			@distance = f["distance"]["text"]
-		    @duration= f["duration"]["text"]
-			end
+		    @duration= f["duration"]["text"]   
+		end
 	 end
 
 	 def get_gas_stations

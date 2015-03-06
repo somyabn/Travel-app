@@ -16,7 +16,10 @@
 		<h3 id="station-name" >Cheapest Station around <%= @trip.start.address%></h3>
 		<ul id="station-link">
 		<% @trip.return_cheapest_or_closest_gas_stations.each do |station| %>
-			<li><%= station.name %> |<%= station.address %> | <%= station.price %> | <%= station.distance %></li>
+			<li> Name: <%= station.name %> </<li>
+				<li>Address:<%= station.address %> </li>
+				<li>Price: <%= number_to_currency(station.price) %> </li>
+				<li> Distance<%= station.distance %> Miles</li>
 		<% end %>
 		</ul>
 </div>

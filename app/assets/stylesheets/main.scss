@@ -7,65 +7,86 @@ header{
  background-color:#006EB8;
  background-position: cover;
  width:100%;
+ height:20%;
 
-	 #title{
-	  margin-left: 57px;
-	  
+#title{
+    
+    font-size:60px;
+    width:500px;
+    margin-left: 100px;
+    margin-top:35px;
+    
 } 
+#logo
+{
+  float:left;
+  width:100px;
+  height:110px;
+  padding: 0px;
+  margin-left:20px;
+}
+
+	 
 }
 #trip{
-  font-size:70px;
+  font-size:60px;
 
 }
 
-#trip-stats{
+#trip-stats
+{
   background: linear-gradient(#FFF 5%,#73AF90 100%);
-  border: 1px solid #FFF;
+ 
   color:#000;
   font-weight: bold;
-  border-radius: 5px;
   padding: 10px;
-  width:300px;
+  width:340px;
+  float:left;
+  height:200px;
+  border-right:1px solid black;
 
- #trip-name{
-  background-color:#73AF90;
-  color:white;
- font-size: 24px;
-}
 
- #trip-link{
-  margin:0;
-  padding:0;
-}
+     #trip-name{
+      color:black;
+     font-size: 24px;
+    }
 
-#trip-list{
-  font-size: 20px;
-  list-style-type: none;
-}
+     #trip-link{
+      margin:0;
+      padding:0;
+      font-size:20px;
+    }
+
+    #trip-list{
+      font-size: 24px;
+      list-style-type: none;
+    }
 }
 #cheapest-station{
 background: linear-gradient(#FFF 5%,#73AF90 100%);
-  border: 1px solid #FFF;
+  
   color:#000;
   font-weight: bold;
-  border-radius: 5px;
   padding: 10px;
-  width:300px;
+  width:340px;
+  float:left;
+  height:200px;
+  border-left:1px solid black;
 
- #trip-name{
-  background-color:#73AF90;
-  color:white;
- font-size: 24px;
+
+ #station-name{
+  color:black;
+ font-size: 20px;
+
 }
 
- #trip-link{
+ #station-link{
   margin:0;
   padding:0;
-}
-
-#trip-list{
   font-size: 20px;
   list-style-type: none;
+  color:black;
 }
 	
 }
+
