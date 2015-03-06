@@ -1,0 +1,38 @@
+ <div id="map-canvas"></div>
+ <div id="control"></div>
+ <div id="directions-panel"></div>
+
+
+<div id="trip-stats">
+	<h3 id="trip-name"><%= @trip.name%></h3>
+	<ul id="trip-link">
+		<li class="trip-list"><strong>Gas Cost:</strong> <%= number_to_currency(@trip.gas_price) %></li>
+		<li class="trip-list" ><strong>Distance: </strong><%= @trip.distance %></li>
+		<li class="trip-list"><strong>Duration:</strong> <%= @trip.duration %></li>
+	</ul>
+</div>
+
+<div id="cheapest-station">
+		<h3 id="station-name" >Cheapest Station around <%= @trip.start.address%></h3>
+		<ul id="station-link">
+		<% @trip.return_cheapest_or_closest_gas_stations.each do |station| %>
+			<li><%= station.name %> |<%= station.address %> | <%= station.price %> | <%= station.distance %></li>
+		<% end %>
+		</ul>
+</div>
+
+<!-- <div id="cheapest-stations">	
+	<h3>All Stations</h3>
+	<ol>
+		<% @trip.gas_stations.each do |station| %>
+			<li><%= station.name %> | <%= station.price %> | <%= station.distance %></li>
+		<% end %>
+	</ol>
+</div>
+ -->
+
+
+<script type="text/javascript">
+	var tripDetails = {start_lat: <%= @trip.start.latitude %>, start_lon: <%= @trip.start.longitude %>, start_address: '<%= @trip.start.address %>', finish_address: '<%= @trip.finish.address %>' };
+</script>
+	

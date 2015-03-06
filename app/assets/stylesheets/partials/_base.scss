@@ -1,0 +1,50 @@
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+// Base Font
+$base-font-family: sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 13px;
+$base-line-height: 1.4;
+
+//// Headings
+$header-font-weight: $bold;
+
+//button 
+$button_grad_firstcolor: #FFF;
+$button_grad_secondcolor: #000;
+$button_bordercolor:black;
+$button_width:10%;
+$button_fontcolor:white;
+
+//figure
+$figure_width: 30%;
+
+//form
+$form_background_color:rgba(black,0.4);
+
+//notification
+$notification-confirm: green;        // Green
+$notification-warning: yellow;     // Yellow
+$notification-alert: red;          // Red
+
+
+//border radius mixin
+@mixin border-radius($radius) {
+-webkit-border-radius: $radius;
+-moz-border-radius: $radius;
+-ms-border-radius: $radius;
+-o-border-radius: $radius;
+border-radius: $radius;
+}
+
+
+@function set-foreground-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000000; // Lighter backgorund, return dark color
+  } @else {
+    @return #ffffff; // Darker background, return light color
+  }
+}
+

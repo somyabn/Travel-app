@@ -1,0 +1,92 @@
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+// Base Font
+$base-font-family: sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 13px;
+$base-line-height: 1.4;
+
+//// Headings
+$header-font-weight: $bold;
+
+//button 
+$button_grad_firstcolor: #73AF90;
+$button_grad_secondcolor: #FFF;
+$button_bordercolor:white;
+$button_width:10%;
+$button_fontcolor:white;
+
+//figure
+$figure_width: 30%;
+
+//form
+$form_background_color:rgba(#73AF90,0.4);
+
+//notification
+$notification-confirm: green;        // Green
+$notification-warning: yellow;     // Yellow
+$notification-alert: red;          // Red
+
+
+//border radius mixin
+@mixin border-radius($radius) {
+-webkit-border-radius: $radius;
+-moz-border-radius: $radius;
+-ms-border-radius: $radius;
+-o-border-radius: $radius;
+border-radius: $radius;
+}
+
+
+@function set-foreground-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000000; // Lighter backgorund, return dark color
+  } @else {
+    @return #ffffff; // Darker background, return light color
+  }
+}
+
+
+
+.form_class{
+	width: 300px;
+	padding: 20px 50px 25px;
+	font-family: raleway;
+	display:block;
+	float:left;
+    background: $form_background_color;
+    border-right: 2px solid white;
+ 
+
+input{
+	width: 90%;
+	height: 30px;
+	padding: 5px;
+	margin-bottom: 25px;
+	margin-top: 5px;
+
+	border: 2px solid #ccc;
+	color: #4f4f4f;
+	font-size: 16px;
+	border-radius: 5px;
+}
+.form_button
+{
+ font-size: 16px;
+  background: linear-gradient($button_grad_firstcolor 5%,$button_grad_secondcolor 100%);
+  border: 1px solid $button_bordercolor;
+  color:set-foreground-text-color($button_grad_secondcolor);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+  outline:none;
+
+  &:hover {
+    background: linear-gradient(#fff, #eee);
+    color: #111;
+  }
+}
+}

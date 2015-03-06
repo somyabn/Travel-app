@@ -1,0 +1,71 @@
+// Partials
+@import "partials/base";
+
+@import "partials/form";
+header{
+ border-top: solid 1px white;
+ background-color:#006EB8;
+ background-position: cover;
+ width:100%;
+
+	 #title{
+	  margin-left: 57px;
+	  
+} 
+}
+#trip{
+  font-size:70px;
+
+}
+
+#trip-stats{
+  background: linear-gradient(#FFF 5%,#73AF90 100%);
+  border: 1px solid #FFF;
+  color:#000;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px;
+  width:300px;
+
+ #trip-name{
+  background-color:#73AF90;
+  color:white;
+ font-size: 24px;
+}
+
+ #trip-link{
+  margin:0;
+  padding:0;
+}
+
+#trip-list{
+  font-size: 20px;
+  list-style-type: none;
+}
+}
+#cheapest-station{
+background: linear-gradient(#FFF 5%,#73AF90 100%);
+  border: 1px solid #FFF;
+  color:#000;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px;
+  width:300px;
+
+ #trip-name{
+  background-color:#73AF90;
+  color:white;
+ font-size: 24px;
+}
+
+ #trip-link{
+  margin:0;
+  padding:0;
+}
+
+#trip-list{
+  font-size: 20px;
+  list-style-type: none;
+}
+	
+}
