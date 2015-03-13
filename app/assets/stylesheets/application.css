@@ -55,10 +55,10 @@ html, body{
   }
   */
   #map-canvas{
-   /*width:800px;
+   width:800px;
    border:solid black 2px;
    height:100%;
-   float:left;*/
+   float:left;
   }
  
  /* @media print {
@@ -92,7 +92,7 @@ header{
 {
   background: linear-gradient(#FFF 5%,#73AF90 100%);
  float:left;
- /* color:black;*/
+  color:black;
   padding-left:10px;
   width:360px;
   height:200px;
@@ -124,7 +124,7 @@ header{
 #cheapest-station{
   background: linear-gradient(#FFF 5%,#73AF90 100%);
   font-weight: bold;
- 
+  color:black;
   width:360px;
   float:left;
   height:200px;
@@ -151,7 +151,7 @@ header{
   margin:0 auto;
 }
 
-
+/*
 #map-canvas {
     position: relative;
     padding-bottom: 75%; 
@@ -164,6 +164,6 @@ header{
     left: 0;
     width: 100%;
     height: 100%;
-}
+}*/
 
 
