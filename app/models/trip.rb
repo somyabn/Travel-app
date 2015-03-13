@@ -25,8 +25,7 @@ class Trip
 
 	 	url ="https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{finish_lat},#{finish_lon}&radius=50000&types=campground|rv_park&key=#{google_key}"
 
-
-	 	response = JSON.load(RestClient.get(url))
+		response = JSON.load(RestClient.get(url))
 	 	
 		response["rows"][0]["elements"].map do |f|
 			@distance = f["distance"]["text"]
