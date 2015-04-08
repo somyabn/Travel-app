@@ -1,0 +1,274 @@
+/* line 53, /Users/mac/Travel-app/app/assets/stylesheets/partials/_form.scss */
+.form_class {
+  width: 300px;
+  padding: 20px 50px 25px;
+  font-family: raleway;
+  height: 500px;
+  float: left;
+  background: rgba(115, 175, 144, 0.4);
+  border-right: 2px solid white;
+}
+/* line 63, /Users/mac/Travel-app/app/assets/stylesheets/partials/_form.scss */
+.form_class input {
+  width: 90%;
+  height: 30px;
+  padding: 5px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  color: #4f4f4f;
+  font-size: 16px;
+  border-radius: 5px;
+}
+/* line 75, /Users/mac/Travel-app/app/assets/stylesheets/partials/_form.scss */
+.form_class .form_button {
+  font-size: 16px;
+  background: linear-gradient(#73AF90 5%, #FFF 100%);
+  border: 1px solid white;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+}
+/* line 87, /Users/mac/Travel-app/app/assets/stylesheets/partials/_form.scss */
+.form_class .form_button:hover {
+  background: linear-gradient(#fff, #eee);
+  color: #111;
+}
+
+/* line 5, /Users/mac/Travel-app/app/assets/stylesheets/main.scss */
+header {
+  border-top: solid 1px white;
+  width: 100%;
+  height: 20%;
+}
+/* line 10, /Users/mac/Travel-app/app/assets/stylesheets/main.scss */
+header #title {
+  font-size: 60px;
+  width: 500px;
+  margin-left: 100px;
+  margin-top: 35px;
+}
+/* line 18, /Users/mac/Travel-app/app/assets/stylesheets/main.scss */
+header #logo {
+  float: left;
+  width: 100px;
+  height: 110px;
+  padding: 0px;
+  margin-left: 20px;
+}
+/* line 53, /Users/mac/Travel-app/app/assets/stylesheets/partials/_form.scss */
+.form_class {
+  width: 300px;
+  padding: 20px 50px 25px;
+  font-family: raleway;
+  height: 500px;
+  float: left;
+  background: rgba(115, 175, 144, 0.4);
+  border-right: 2px solid white;
+}
+/* line 63, /Users/mac/Travel-app/app/assets/stylesheets/partials/_form.scss */
+.form_class input {
+  width: 90%;
+  height: 30px;
+  padding: 5px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  color: #4f4f4f;
+  font-size: 16px;
+  border-radius: 5px;
+}
+/* line 75, /Users/mac/Travel-app/app/assets/stylesheets/partials/_form.scss */
+.form_class .form_button {
+  font-size: 16px;
+  background: linear-gradient(#73AF90 5%, #FFF 100%);
+  border: 1px solid white;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+}
+/* line 87, /Users/mac/Travel-app/app/assets/stylesheets/partials/_form.scss */
+.form_class .form_button:hover {
+  background: linear-gradient(#fff, #eee);
+  color: #111;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+input {
+	padding: .75em;
+	font-family: 32px;
+	width: 200px;
+}
+
+html, body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+  }
+
+/*#panel{
+    margin-left: -180px;
+    z-index: 5;
+    background-color: #888;
+    padding: 5px;
+    border: 1px solid #999;
+  }*/
+
+  #directions-panel{
+    height: 600px;
+    float: left;
+    width: 400px;
+    overflow: auto;
+    border:solid black 2px;
+    border-left:none;
+
+  }
+
+  /*#control{
+    padding:2px;
+    font-size: 34px;
+    font-family: Arial;
+    box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+    
+    width:200px;
+  }
+  */
+  #map-canvas{
+   width:630px;
+   border:solid black 2px;
+   height: 600px;
+   float:left;
+  }
+ 
+ /* @media print {
+    #map-canvas {
+      height: 500px;
+      margin: 0;
+    }
+
+    #directions-panel {
+      float: left;
+      width: auto;
+    }
+  }*/
+
+#new-trip-form {
+  border:3px solid red;
+  width:400px;
+  height:400px;
+  background-color: blue;
+}
+
+header{
+ border-top: solid 1px white;
+ border-bottom: solid 2px white;
+ background-color:#E0F5FF;
+ background-position: cover;
+ width:100%;
+}
+
+#trip-stats
+{
+  background: linear-gradient(#FFF 5%,#73AF90 100%);
+ float:left;
+  color:black;
+  padding-left:10px;
+  width:575px;
+  height: 135px;
+  /*border:7px solid black;*/
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+ #trip-name{
+  color:black;
+  font-size: 20px;
+}
+
+ #trip-link{
+  margin:0;
+  padding:0;
+  font-size: 20px;
+}
+
+#trip-list{
+  
+  list-style-type: none;
+  color:black;
+  font-size:30px;
+
+
+}
+
+
+#cheapest-station{
+  background: linear-gradient(#FFF 5%,#73AF90 100%);
+  font-weight: bold;
+  color:black;
+  width:575px;
+  float:left;
+  height: 135px;
+  overflow: scroll;
+  margin-bottom: 30px;
+ 
+ 
+}
+
+ #station-name{
+  color:black;
+  font-size: 20px;
+
+}
+
+ #station-link{
+  margin:0;
+  padding:0;
+  font-size: 20px;
+  list-style-type: none;
+  color:black;
+}
+  
+
+#container{
+  width:100%;
+  margin:0 auto;
+}
+
+/*
+#map-canvas {
+    position: relative;
+    padding-bottom: 75%; 
+    height: 0;
+    overflow: hidden;
+    }
+#map-canvas iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}*/
+
+
