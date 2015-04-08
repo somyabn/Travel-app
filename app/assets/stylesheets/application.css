@@ -36,7 +36,7 @@ html, body{
   }*/
 
   #directions-panel{
-    height:100%;
+    height: 600px;
     float: left;
     width: 400px;
     overflow: auto;
@@ -55,9 +55,9 @@ html, body{
   }
   */
   #map-canvas{
-   width:800px;
+   width:630px;
    border:solid black 2px;
-   height:100%;
+   height: 600px;
    float:left;
   }
  
@@ -94,10 +94,11 @@ header{
  float:left;
   color:black;
   padding-left:10px;
-  width:360px;
-  height:200px;
+  width:575px;
+  height: 135px;
   /*border:7px solid black;*/
   font-weight: bold;
+  margin-bottom: 30px;
 }
 
  #trip-name{
@@ -125,9 +126,12 @@ header{
   background: linear-gradient(#FFF 5%,#73AF90 100%);
   font-weight: bold;
   color:black;
-  width:360px;
+  width:575px;
   float:left;
-  height:200px;
+  height: 135px;
+  overflow: scroll;
+  margin-bottom: 30px;
+ 
  
 }
 
