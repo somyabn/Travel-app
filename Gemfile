@@ -31,7 +31,9 @@ gem 'rest-client'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+group :production do
+	gem 'pg'
+end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
